@@ -13,7 +13,8 @@ pipeline {
 
         stage("build Jar") {
             steps {
-                 sh 'mvn -Dmaven.test.failure.ignore=true install'
+              
+                 sh 'mvn -B -DskipTests clean package'
             }
         }
         stage("Build image") {
