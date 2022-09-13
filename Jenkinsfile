@@ -3,13 +3,7 @@
 
 pipeline {
     agent any
-    environment {
-        // PROJECT_ID = '<projectid>'
-        // CLUSTER_NAME = 'jenkins-cd'
-        // LOCATION = 'us-central1-a'
-        // CREDENTIALS_ID = '< >'
-        // dockerImage = "mywebsite"
-    }
+    
     stages {
         stage("Checkout code") {
             steps {
